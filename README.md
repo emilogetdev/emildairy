@@ -1,17 +1,21 @@
 # Emil Tagebuch
 
-Lightweight public diary for GitHub Pages. Readers can view and search posts; one authenticated admin can create, edit and delete them.
+Öffentliches, responsives Tagebuch auf GitHub Pages. Besucher können Einträge lesen und durchsuchen. Nur das festgelegte Supabase-Admin-Konto darf Einträge erstellen, bearbeiten oder löschen.
 
-## Supabase setup (required for live data and admin)
-1. Create a Supabase project.
-2. In SQL Editor, run `supabase-setup.sql` after replacing every occurrence of `REPLACE-WITH-YOUR-ADMIN-EMAIL@example.com` with your admin email.
-3. In Authentication > Users, manually create that admin user with a strong password. Disable public sign-ups.
-4. In Project Settings > API, copy the Project URL and publishable/anon key into `config.js`. Never use the service_role key.
-5. Commit the updated `config.js` to this repository. The anon/publishable key is public by design; database RLS policies protect writes.
+## Bereits verbunden
+- Verwendet dasselbe Supabase-Projekt wie Wildora: `dzwgomgrtlsqksnjclje` (EU).
+- Eigene Tabelle `diary_entries`, getrennt von Wildoras Tabellen.
+- Supabase Publishable Key im `config.js`; niemals den Service-Role-/Secret-Key in den Browser oder ins Repository legen.
+- Admin-Berechtigung wird serverseitig durch Row Level Security (RLS) geprüft.
+
+## Einmalige Supabase-Einrichtung
+1. Im Supabase-Projekt `dzwgomgrtlsqksnjclje` im SQL Editor den Inhalt von `supabase-setup.sql` ausführen.
+2. Vorher in den drei Admin-Policies `REPLACE-WITH-ADMIN-EMAIL@example.com` durch die E-Mail-Adresse des einen Admin-Kontos ersetzen.
+3. Falls das Wildora-Konto bereits existiert, kann dasselbe Supabase-Login verwendet werden. Andernfalls das Admin-Konto unter Authentication → Users anlegen. Öffentliche Registrierung deaktivieren.
 
 ## GitHub Pages
 Repository: https://github.com/emilogetdev/emildairy
-Open Settings > Pages, choose Deploy from a branch, select `main` and `/(root)`, then Save.
-Expected site URL: https://emilogetdev.github.io/emildairy/
+Website: https://emilogetdev.github.io/emildairy/
+GitHub Actions deployed automatisch bei Pushes auf `main`.
 
-Admin: click Admin, or press Ctrl+4 then Ctrl+3 within two seconds. The shortcut only opens the login; Supabase Auth and RLS enforce permissions.
+Admin: auf **Admin** klicken oder **Ctrl+4**, dann innerhalb von zwei Sekunden **Ctrl+3** drücken. Die Tastenkombination öffnet nur das Login; sie gewährt keine Rechte.

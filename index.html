@@ -1,113 +1,97 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080d20">
-<title>MATH QUEST — Exam Training</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#10172b">
+<title>Emil Dairy — Brainrot Ranch</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Orbitron:wght@600;700;800;900&display=swap');
-:root{--bg:#080d20;--panel:#111b38;--line:#2b3d70;--cyan:#50eaff;--violet:#a98bff;--lime:#baff6a;--pink:#ff6fcf;--muted:#aab8dc}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;color:#f5f7ff;background:radial-gradient(ellipse at 50% -10%,#263c78 0,transparent 55%),var(--bg);font-family:Nunito,system-ui,sans-serif}button{font:inherit;cursor:pointer;color:inherit;border:0}.app{max-width:1080px;margin:auto;padding:20px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.brand{font:900 clamp(21px,4vw,34px) Orbitron,sans-serif;letter-spacing:1px}.brand span{color:var(--cyan);text-shadow:0 0 18px #50eaff88}.stats{display:flex;gap:8px;flex-wrap:wrap}.pill{background:#152348;border:1px solid var(--line);border-radius:12px;padding:8px 12px;color:var(--muted);font-weight:800}.pill b{color:var(--lime)}.hero,.card{background:linear-gradient(145deg,#17264c,#101832);border:1px solid #344a82;border-radius:20px;box-shadow:0 15px 50px #0003}.hero{padding:clamp(20px,4vw,38px);text-align:center;position:relative;overflow:hidden}.eyebrow{color:var(--cyan);font:800 12px Orbitron;letter-spacing:2px}.hero h1{font:900 clamp(29px,6vw,52px) Orbitron;margin:12px 0;color:#fff}.hero h1 em{font-style:normal;color:var(--cyan)}.hero p{max-width:680px;margin:0 auto 20px;color:#c1cbea;font-size:17px;line-height:1.55}.btn{padding:13px 20px;border-radius:12px;background:linear-gradient(100deg,#50eaff,#a2ffe1);color:#071326;font-weight:900;box-shadow:0 5px 0 #167b9b;transition:.15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #167b9b}.btn.secondary{background:linear-gradient(100deg,#a98bff,#ff8ed8);box-shadow:0 5px 0 #694bb0}.btn.ghost{background:#1b2b54;color:#e7edff;box-shadow:none;border:1px solid #425b98}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.topic{padding:17px;background:#111b38;border:1px solid #293d70;border-radius:15px;text-align:left}.topic strong{display:block;font-size:17px}.topic small{color:var(--muted)}.topic .ico{font-size:24px;float:right}.hidden{display:none!important}.card{padding:clamp(18px,4vw,32px);margin-top:14px}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.progress{height:9px;border-radius:20px;background:#26365f;overflow:hidden;margin:14px 0}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--violet));transition:width .25s}.roundtag{color:var(--cyan);font:800 12px Orbitron;letter-spacing:1px}.question{font-size:clamp(22px,4vw,30px);font-weight:900;line-height:1.35;margin:20px 0}.math{font:800 clamp(25px,5vw,38px) Orbitron;color:#fff;letter-spacing:.5px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{padding:15px;text-align:left;background:#1a2a52;border:1px solid #405a94;border-radius:13px;font-weight:800;font-size:17px;min-height:58px}.answer:hover{border-color:var(--cyan);background:#213866}.answer.correct{border-color:var(--lime);background:#25452e}.answer.wrong{border-color:#ff7291;background:#51263b}.answer:disabled{cursor:default}.feedback{margin-top:14px;padding:14px;border-radius:12px;background:#17284b;color:#dce6ff;line-height:1.5;border:1px solid #3b548a}.feedback.good{border-color:#79c95d}.feedback.bad{border-color:#ff7291}.muted{color:var(--muted)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.barlabel{font-size:13px;color:var(--muted);font-weight:800}.result{text-align:center;padding:25px}.result h2{font:900 clamp(28px,5vw,42px) Orbitron;color:var(--lime)}.bigscore{font:900 54px Orbitron;color:var(--cyan);margin:10px}.badge{display:inline-block;padding:7px 12px;border-radius:30px;background:#28385f;color:var(--lime);font-weight:900;margin:4px}.arcade{background:#080e24;border:1px solid #40558f;border-radius:16px;overflow:hidden}.arcade canvas{width:100%;display:block;touch-action:manipulation}.arcadehelp{padding:12px;color:var(--muted);text-align:center}.footer{text-align:center;color:#6e7eaa;font-size:12px;padding:20px}.review{padding:12px 0;border-bottom:1px solid #2b3d70}.review:last-child{border:0}.review b{color:var(--cyan)}.hint{font-size:14px;color:var(--muted)}@media(max-width:650px){.app{padding:11px}.top{align-items:flex-start;flex-direction:column}.grid,.answers{grid-template-columns:1fr}.hero{padding:22px 16px}.stats{width:100%}.pill{font-size:13px}.answer{min-height:52px}}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
+:root{--ink:#f7f8ff;--muted:#b9c4df;--panel:#18233d;--line:#35476d;--gold:#ffe16b;--mint:#82f3c4;--pink:#ff91cf}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#9bd8ef;color:var(--ink);font-family:Nunito,system-ui,sans-serif;touch-action:none}button{font:inherit;color:inherit;border:0;cursor:pointer;touch-action:manipulation}#game{position:fixed;inset:0}canvas{display:block;width:100%;height:100%}
+.hud{position:fixed;inset:0;pointer-events:none}.top{position:absolute;top:env(safe-area-inset-top,10px);left:12px;right:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.brand,.stat,.panel{background:#101a31eF;border:1px solid #ffffff26;box-shadow:0 8px 25px #17243a33;backdrop-filter:blur(10px);border-radius:16px}.brand{padding:9px 13px;font-weight:900;letter-spacing:.5px}.brand span{color:var(--gold)}.stats{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.stat{padding:8px 11px;font-weight:900;font-size:14px}.stat b{color:var(--gold)}.hint{position:absolute;top:72px;left:50%;transform:translateX(-50%);padding:8px 13px;border-radius:14px;background:#101a31cc;text-align:center;font-size:13px;color:#f4f7ff;white-space:nowrap;max-width:calc(100vw - 24px)}
+.bottom{position:absolute;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:flex-end;gap:12px}.joystick{width:122px;height:122px;border-radius:50%;background:#12203b77;border:2px solid #ffffff55;position:relative;pointer-events:auto;touch-action:none;box-shadow:inset 0 0 20px #0002}.stick{width:48px;height:48px;position:absolute;left:35px;top:35px;border-radius:50%;background:#ffffffcc;border:3px solid #fff;box-shadow:0 4px 12px #0003}.actions{display:flex;gap:8px;align-items:flex-end;pointer-events:auto}.action{min-width:76px;min-height:65px;border-radius:18px;padding:9px 11px;background:linear-gradient(145deg,#ffdc66,#ffad4d);color:#39280b;font-weight:900;box-shadow:0 5px 0 #b46a25;font-size:13px}.action.secondary{background:linear-gradient(145deg,#a8f8d7,#54d8b0);box-shadow:0 5px 0 #238a70;color:#123b32}.action.purple{background:linear-gradient(145deg,#d7b5ff,#a68bff);box-shadow:0 5px 0 #6651b2;color:#24164b}
+.panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,calc(100vw - 28px));padding:22px;text-align:center;pointer-events:auto}.panel h1{font-size:clamp(26px,7vw,38px);margin:0 0 7px}.panel p{color:var(--muted);line-height:1.5;margin:8px 0 16px}.panel .big{font-size:56px}.primary{padding:13px 22px;border-radius:14px;background:linear-gradient(100deg,#ffe16b,#ffad4d);color:#342407;font-weight:900;box-shadow:0 5px 0 #b46a25}.small{font-size:12px;color:var(--muted)}.hidden{display:none!important}
+.toast{position:absolute;left:50%;top:130px;transform:translateX(-50%);padding:10px 15px;background:#101a31ed;border:1px solid #ffffff33;border-radius:13px;font-weight:900;white-space:nowrap;opacity:0;transition:opacity .2s}.toast.show{opacity:1}
+.shop{position:absolute;right:12px;top:50%;transform:translateY(-50%);display:grid;gap:7px;pointer-events:auto}.shop button{border-radius:13px;padding:9px 11px;background:#14213de8;border:1px solid #ffffff38;font-size:12px;font-weight:900;text-align:left}.shop button b{color:var(--gold)}
+@media(min-width:800px){.joystick{width:138px;height:138px}.stick{left:42px;top:42px}.action{min-width:100px;min-height:72px;font-size:14px}.hint{top:82px}.shop{right:22px}}
+@media(max-width:390px){.stat{font-size:12px;padding:7px 8px}.brand{font-size:13px}.joystick{width:105px;height:105px}.stick{left:27px;top:27px;width:46px;height:46px}.action{min-width:65px;min-height:58px;padding:7px;font-size:11px}.bottom{left:8px;right:8px}}
 </style>
 </head>
-<body><main class="app">
-<header class="top"><div class="brand">MATH <span>QUEST</span></div><div class="stats"><div class="pill">⭐ XP <b id="xp">0</b></div><div class="pill">🏆 BEST <b id="best">0%</b></div><div class="pill">🔥 STREAK <b id="streak">0</b></div><div class="pill">⏱ ZEIT <b id="elapsed">00:00</b></div></div></header>
-<section id="home">
-<div class="hero"><div class="eyebrow">YOUR EXAM TRAINING STARTS NOW</div><h1>LEVEL UP YOUR <em>MATH.</em></h1><p>Train for tomorrow's class test. Seven worlds, smart explanations, tricky questions and a secret arcade game. Take your time — this training is designed for about <b>20–30 minutes</b>.</p><button class="btn" id="start">▶ TRAINING STARTEN</button><p class="hint" style="margin-top:15px">42 Aufgaben · 7 Themen · Erklärungen nach jeder Antwort · ca. 20–30 Minuten Lernzeit</p></div>
-<div class="grid">
-<div class="topic"><span class="ico">➗</span><strong>Rationale Zahlen</strong><small>Brüche, Dezimalzahlen & Einordnung</small></div><div class="topic"><span class="ico">♾️</span><strong>Irrationale Zahlen</strong><small>Wurzeln & unendliche Dezimalzahlen</small></div>
-<div class="topic"><span class="ico">🌌</span><strong>Reelle Zahlen</strong><small>Zahlenmengen verstehen</small></div><div class="topic"><span class="ico">√</span><strong>Quadratwurzeln</strong><small>Wurzel ziehen & vereinfachen</small></div>
-<div class="topic"><span class="ico">∛</span><strong>Kubikwurzeln</strong><small>Umgekehrt hoch drei</small></div><div class="topic"><span class="ico">⚡</span><strong>Potenzen</strong><small>Regeln & negative Exponenten</small></div>
-<div class="topic"><span class="ico">|x|</span><strong>Betrag</strong><small>Abstand von null</small></div><div class="topic"><span class="ico">🎮</span><strong>Bonus Arcade</strong><small>Wird nach dem Training freigeschaltet</small></div>
-</div></section>
-<section id="quiz" class="card hidden">
-<div class="row"><span class="roundtag" id="topic">WORLD 1 / 7</span><span class="barlabel" id="count">FRAGE 1 / 35</span></div><div class="progress"><i id="prog"></i></div>
-<div class="row"><span class="muted" id="subtopic">Rationale Zahlen</span><span class="muted" id="points">0 Punkte</span></div>
-<div class="question" id="qtext"></div><div class="answers" id="answers"></div><div id="feedback" class="feedback hidden" aria-live="polite"></div>
-<div class="actions"><button class="btn hidden" id="next">WEITER →</button><button class="btn ghost" id="quit">Training beenden</button></div>
-</section>
-<section id="finish" class="card hidden"><div class="result"><div class="eyebrow">TRAINING COMPLETE</div><h2 id="finishTitle">LEVEL UP!</h2><div class="bigscore" id="score">0%</div><p id="summary" class="muted"></p><div id="earned"></div><p id="unlockText"></p><button class="btn secondary hidden" id="arcadeOpen">🎮 ARCADE FREISCHALTEN</button><button class="btn" id="reviewBtn">FEHLER ANSEHEN</button> <button class="btn ghost" id="again">NOCHMAL TRAINIEREN</button></div><div id="review" class="hidden"></div></section>
-<section id="arcadeSection" class="card hidden"><div class="row"><div><div class="eyebrow">BONUS UNLOCKED</div><h2 style="font:900 25px Orbitron;margin:8px 0">NEON STAR RUN</h2></div><span class="badge">MATH QUEST REWARD</span></div><p class="muted">Spring über die Hindernisse, sammle Sterne und knacke deinen Highscore. Leertaste, Pfeil hoch oder tippen zum Springen.</p><div class="arcade"><canvas id="runner" width="900" height="320"></canvas><div class="arcadehelp" id="gameStatus">Drücke START und springe über die Blöcke.</div></div><div class="actions"><button class="btn" id="gameStart">▶ START GAME</button><button class="btn ghost" id="backHome">ZURÜCK ZUM TRAINING</button></div></section>
-<div class="footer">MATH QUEST · Lerne clever, nicht auf Zeit · Viel Erfolg bei deiner Klassenarbeit! ✨</div>
-</main>
-<script>
-(()=>{
-'use strict';
-window.addEventListener('error',e=>{console.error('MATH QUEST script error:',e.error||e.message);const b=document.getElementById('start');if(b)b.textContent='⚠ FEHLER – SEITE NEU LADEN';});
+<body>
+<div id="game"></div>
+<div class="hud">
+ <div class="top"><div class="brand">🥛 EMIL <span>DAIRY</span></div><div class="stats"><div class="stat">🪙 <b id="coins">100</b></div><div class="stat">🏡 <b id="owned">0</b>/8</div><div class="stat">💸 <b id="income">0</b>/s</div></div></div>
+ <div class="hint" id="hint">Laufe zum Laufband und sammle Dairy-Brainrots!</div>
+ <div class="toast" id="toast"></div>
+ <div class="shop"><button id="upgrade">⚡ Upgrade<br><b>100 🪙</b></button><button id="expand">🏡 Base erweitern<br><b>250 🪙</b></button></div>
+ <div class="bottom"><div class="joystick" id="joy"><div class="stick" id="stick"></div></div><div class="actions"><button class="action secondary" id="collect">✋<br>SAMMELN</button><button class="action" id="sell">💰<br>ABHOLEN</button></div></div>
+</div>
+<div class="panel" id="startPanel"><div class="big">🥛🐮</div><h1>DAIRY BRAINROT</h1><p>Willkommen auf deiner verrückten Milchfarm! Sammle lustige Dairy-Kreaturen vom Laufband, stelle sie in deine Base und verdiene Münzen.</p><button class="primary" id="play">▶ SPIELEN</button><p class="small">Mobile: Joystick zum Laufen · Sammeln und Abholen per Touch<br>PC: WASD / Pfeiltasten · E = Sammeln · Leertaste = Abholen</p></div>
+<div class="panel hidden" id="helpPanel"><h1>🎉 Deine Farm!</h1><p>Geh zum Laufband, stelle dich neben eine Figur und tippe auf SAMMELN. Bring sie zu einem freien Platz in deiner Base. Sie produziert automatisch Münzen!</p><button class="primary" id="continue">LOS GEHT'S</button></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
 const $=id=>document.getElementById(id);
-const store={get:(k,d)=>{try{return store.get(k)??d}catch{return d}},set:(k,v)=>{try{store.set(k,v)}catch{}}};
-const rounds=[
-{name:'Rationale Zahlen',emoji:'➗',questions:[
-['Welche Zahl ist rational?',['√2','π','-3/4','√7'],2,'Rationale Zahlen lassen sich als Bruch ganzer Zahlen schreiben. -3/4 ist bereits ein solcher Bruch.'],
-['Welche Dezimalzahl entspricht 3/5?',['0,3','0,6','0,8','1,5'],1,'3 ÷ 5 = 0,6.'],
-['Berechne: -7 + 12',['-19','-5','5','19'],2,'Von -7 gehst du 12 Schritte nach rechts: Das ergibt 5.'],
-['Berechne: (-4) · (-6)',['-24','-10','10','24'],3,'Minus mal Minus ergibt Plus. 4 · 6 = 24.'],
-['Welche Zahl liegt zwischen -1 und 0?',['-1,5','-0,25','0,5','-2'],1,'-0,25 liegt auf dem Zahlenstrahl zwischen -1 und 0.']]},
-{name:'Irrationale Zahlen',emoji:'♾️',questions:[
-['Welche Zahl ist irrational?',['0,75','-8','√2','5/9'],2,'√2 ist irrational: Sie lässt sich nicht als Bruch zweier ganzer Zahlen darstellen.'],
-['Welche Aussage zu π stimmt?',['π ist rational','π ist irrational','π ist eine ganze Zahl','π = 3 exakt'],1,'π ist irrational. 3,14 ist nur eine Näherung.'],
-['Wie sieht die Dezimaldarstellung einer irrationalen Zahl aus?',['Endlich','Periodisch','Unendlich und nicht periodisch','Immer eine ganze Zahl'],2,'Irrationale Zahlen haben unendlich viele Nachkommastellen ohne periodische Wiederholung.'],
-['Welche Wurzel ist irrational?',['√9','√16','√25','√10'],3,'10 ist keine Quadratzahl. Deshalb ist √10 irrational.'],
-['Ist 0,272727… rational?',['Ja, periodisch','Nein, irrational','Nein, reell ist es nicht','Nur wenn negativ'],0,'Jede periodische Dezimalzahl ist rational. 0,272727… = 27/99.']]},
-{name:'Reelle Zahlen',emoji:'🌌',questions:[
-['Welche Zahlen gehören zu den reellen Zahlen?',['Nur natürliche','Nur rationale','Rationale und irrationale','Nur ganze'],2,'Die reellen Zahlen bestehen aus allen rationalen und irrationalen Zahlen.'],
-['Welche Aussage ist richtig?',['Jede rationale Zahl ist reell','Jede reelle Zahl ist rational','Irrationale Zahlen sind nicht reell','√2 ist nicht reell'],0,'Alle rationalen Zahlen sind reell. Auch irrationale Zahlen sind reell.'],
-['Welche Zahl ist KEINE reelle Zahl?',['-5','√0','√(-4)','2,7'],2,'Die Quadratwurzel einer negativen Zahl ist keine reelle Zahl.'],
-['Ordne aufsteigend: -2, 0, -5, 3',['-5; -2; 0; 3','3; 0; -2; -5','-2; -5; 0; 3','0; -2; -5; 3'],0,'Aufsteigend bedeutet von klein nach groß: -5, -2, 0, 3.'],
-['Welche Menge enthält auch irrationale Zahlen?',['ℕ','ℤ','ℚ','ℝ'],3,'ℝ bezeichnet die reellen Zahlen. ℚ sind nur die rationalen Zahlen.']]},
-{name:'Quadratwurzeln',emoji:'√',questions:[
-['√81 = ?',['8','9','18','40'],1,'9 · 9 = 81, also ist √81 = 9.'],
-['√0,49 = ?',['0,07','0,7','7','4,9'],1,'0,7 · 0,7 = 0,49.'],
-['Welche Zahl ist √144?',['11','12','14','72'],1,'12² = 144.'],
-['Vereinfache √50.',['5√2','25√2','2√5','10√5'],0,'√50 = √(25 · 2) = √25 · √2 = 5√2.'],
-['Zwischen welchen ganzen Zahlen liegt √30?',['4 und 5','5 und 6','6 und 7','7 und 8'],1,'25 < 30 < 36, also 5 < √30 < 6.']]},
-{name:'Kubikwurzeln',emoji:'∛',questions:[
-['∛27 = ?',['2','3','6','9'],1,'3 · 3 · 3 = 27.'],
-['∛(-64) = ?',['-8','-4','4','8'],1,'(-4)³ = -64. Die Kubikwurzel einer negativen Zahl ist negativ.'],
-['∛125 = ?',['5','15','25','625'],0,'5³ = 125.'],
-['Welche Zahl hat die Kubikwurzel 2?',['4','6','8','16'],2,'2³ = 2 · 2 · 2 = 8.'],
-['∛1000 = ?',['10','20','100','1000'],0,'10³ = 10 · 10 · 10 = 1000.']]},
-{name:'Potenzen',emoji:'⚡',questions:[
-['2⁵ = ?',['10','16','25','32'],3,'2⁵ = 2 · 2 · 2 · 2 · 2 = 32.'],
-['3² · 3³ = ?',['3⁵','3⁶','9⁵','3'],0,'Bei gleicher Basis werden beim Multiplizieren die Exponenten addiert: 2 + 3 = 5.'],
-['(2³)² = ?',['2⁵','2⁶','2⁹','2'],1,'Potenz hoch Potenz: Exponenten multiplizieren. 3 · 2 = 6.'],
-['5⁰ = ?',['0','1','5','-5'],1,'Jede Zahl außer 0 hoch 0 ist 1.'],
-['2⁻² = ?',['-4','-2','1/4','4'],2,'Negativer Exponent bedeutet Kehrwert: 2⁻² = 1/2² = 1/4.']]},
-{name:'Betrag',emoji:'|x|',questions:[
-['Was ist |-8|?',['-8','0','8','1/8'],2,'Der Betrag ist der Abstand von null. Dieser Abstand ist nie negativ.'],
-['Was ist |5 - 12|?',['-7','7','17','-17'],1,'5 - 12 = -7. Der Betrag davon ist 7.'],
-['Welche Aussage stimmt?',['|-4| = -4','|0| = 1','|3| = |-3|','Betrag ist immer negativ'],2,'3 und -3 haben beide den Abstand 3 von null.'],
-['Löse |x| = 6.',['Nur x = 6','Nur x = -6','x = 6 oder x = -6','Keine Lösung'],2,'Beide Zahlen 6 und -6 haben den Abstand 6 von null.'],
-['Berechne: |-3| + |−9|',['-12','6','12','-6'],2,'|-3| = 3 und |-9| = 9. Zusammen 12.']]
-
+let scene,camera,renderer,player,clock,started=false,coins=100,owned=[],capacity=8,level=1,carry=null,spawned=[],lastSpawn=0,lastPay=0,toastTimer=0;
+const slots=[],keys={},world={};
+const saved=(()=>{try{return JSON.parse(localStorage.getItem('dairySave')||'{}')}catch{return {}}})();
+coins=Number(saved.coins)||100;level=Number(saved.level)||1;capacity=Number(saved.capacity)||8;
+const types=[
+ {name:'Milky Moo',emoji:'🐮',rate:2,color:0xf4f0e5,cost:20},
+ {name:'Choco Bobo',emoji:'🍫',rate:4,color:0x98603e,cost:45},
+ {name:'Strawberry Cow',emoji:'🍓',rate:7,color:0xff9dbb,cost:85},
+ {name:'Sir Cheese',emoji:'🧀',rate:11,color:0xffd84c,cost:140},
+ {name:'Froggy Yogurt',emoji:'🐸',rate:17,color:0x9bdb82,cost:220},
+ {name:'Cosmic Goat',emoji:'🐐',rate:28,color:0xb9a4ff,cost:350}
 ];
-// Extra transfer questions: one more challenge per topic.
-rounds[0].questions.push(['Berechne: 2/3 + 1/6',['1/2','5/6','1','1/6'],1,'Erweitere 2/3 zu 4/6. Dann 4/6 + 1/6 = 5/6.']);
-rounds[1].questions.push(['Welche dieser Zahlen ist rational?',['√3','√49','π','√11'],1,'√49 = 7. Das ist eine ganze Zahl und damit rational.']);
-rounds[2].questions.push(['Welche Aussage ist richtig?',['Zwischen zwei reellen Zahlen liegt immer eine rationale Zahl','Alle reellen Zahlen sind positiv','Jede reelle Zahl ist eine ganze Zahl','Irrationale Zahlen gehören nicht zu ℝ'],0,'Zwischen zwei verschiedenen reellen Zahlen gibt es immer auch rationale Zahlen.']);
-rounds[3].questions.push(['Berechne √(9/16).',['3/8','4/3','3/4','9/4'],2,'√(9/16) = √9 / √16 = 3/4.']);
-rounds[4].questions.push(['∛(-216) = ?',['-8','-6','6','8'],1,'(-6)³ = -216.']);
-rounds[5].questions.push(['10⁻² = ?',['-100','-0,01','0,1','0,01'],3,'10⁻² = 1/10² = 1/100 = 0,01.']);
-rounds[6].questions.push(['Berechne: |−2| − |5|',['-7','-3','3','7'],1,'|−2| = 2 und |5| = 5. Also 2 − 5 = -3.']);
-
-let all=[],index=0,correct=0,streak=0,xp=Number(store.get('mqxp')||0),best=Number(store.get('mqbest')||0),wrong=[],answered=false,sessionCorrect=0,startedAt=0,elapsedSeconds=0;
-const shuffle=a=>{let b=a.slice();for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
-function stats(){$('xp').textContent=xp;$('best').textContent=best+'%';$('streak').textContent=streak;$('elapsed').textContent=clock(elapsedSeconds)}
-function clock(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
-setInterval(()=>{if(startedAt&&!$('quiz').classList.contains('hidden')){elapsedSeconds=Math.floor((Date.now()-startedAt)/1000);$('elapsed').textContent=clock(elapsedSeconds)}},1000);
-function show(id){['home','quiz','finish','arcadeSection'].forEach(x=>$(x).classList.toggle('hidden',x!==id))}
-function begin(){try{all=[];rounds.forEach((r,ri)=>r.questions.forEach((q,qi)=>all.push({...q,ri,qi})));index=0;correct=0;sessionCorrect=0;streak=0;wrong=[];elapsedSeconds=0;startedAt=Date.now();stats();show('quiz');render()}catch(err){console.error('MATH QUEST start error:',err);alert('MATH QUEST konnte nicht starten: '+(err&&err.message?err.message:String(err)));}}
-function render(){let q=all[index],r=rounds[q.ri];answered=false;$('topic').textContent='WORLD '+(q.ri+1)+' / 7 '+r.emoji;$('count').textContent='FRAGE '+(index+1)+' / '+all.length;$('prog').style.width=(index/all.length*100)+'%';$('subtopic').textContent=r.name;$('points').textContent=correct+' richtig';$('qtext').textContent=q[0];$('feedback').classList.add('hidden');$('next').classList.add('hidden');$('answers').innerHTML='';q[1].forEach((a,i)=>{let b=document.createElement('button');b.className='answer';b.textContent=String.fromCharCode(65+i)+')  '+a;b.onclick=()=>answer(i);$('answers').appendChild(b)})}
-function answer(choice){if(answered)return;answered=true;let q=all[index],ok=choice===q[2];let buttons=[...$('answers').children];buttons.forEach((b,i)=>{b.disabled=true;if(i===q[2])b.classList.add('correct');if(i===choice&&!ok)b.classList.add('wrong')});let f=$('feedback');f.classList.remove('hidden');f.classList.toggle('good',ok);f.classList.toggle('bad',!ok);if(ok){correct++;sessionCorrect++;streak++;xp+=10+(streak>=3?5:0);f.innerHTML='<b>✓ Richtig! +'+(10+(streak>=3?5:0))+' XP</b><br>'+q[3]}else{streak=0;wrong.push({q:q[0],your:q[1][choice],right:q[1][q[2]],why:q[3],topic:rounds[q.ri].name});f.innerHTML='<b>✗ Noch nicht ganz.</b><br>Richtig ist: <b>'+q[1][q[2]]+'</b><br>'+q[3]}store.set('mqxp',xp);stats();$('points').textContent=correct+' richtig';$('next').classList.remove('hidden');$('next').textContent=index===all.length-1?'ERGEBNIS ANSEHEN →':'WEITER →'}
-function finish(){let pct=Math.round(correct/all.length*100);best=Math.max(best,pct);store.set('mqbest',best);stats();show('finish');$('score').textContent=pct+'%';$('finishTitle').textContent=pct>=90?'MATH LEGEND!':pct>=70?'STARK GEMACHT!':pct>=50?'GUTER START!':'WEITER ÜBEN!';$('summary').textContent=correct+' von '+all.length+' Aufgaben richtig. Lernzeit: '+clock(elapsedSeconds)+'. Du hast '+xp+' XP insgesamt gesammelt.';$('earned').innerHTML='<span class="badge">'+correct+' richtig</span><span class="badge">'+wrong.length+' zum Wiederholen</span><span class="badge">+'+(correct*10)+' Basis-XP</span>';$('unlockText').textContent=pct>=70?'🎉 Ab 70 % ist Neon Star Run freigeschaltet!':'Erreiche mindestens 70 %, um das Bonus-Game freizuschalten. Du kannst das Training direkt wiederholen.';$('arcadeOpen').classList.toggle('hidden',pct<70);$('review').classList.add('hidden');$('review').innerHTML=wrong.length?'<h3>Das solltest du wiederholen:</h3>'+wrong.map(w=>'<div class="review"><b>'+w.topic+'</b><p>'+w.q+'</p><p class="muted">Deine Antwort: '+w.your+' · Richtig: '+w.right+'</p><p>'+w.why+'</p></div>').join(''):'<p>Perfekt — keine Fehler! 🎉</p>'}
-window.__startMathQuest=begin;$('start').addEventListener('click',begin);$('next').onclick=()=>{if(index<all.length-1){index++;render()}else finish()};$('quit').onclick=()=>{if(confirm('Training wirklich beenden? Dein bisheriger Punktestand bleibt erhalten.'))show('home')};$('again').onclick=begin;$('reviewBtn').onclick=()=>{$('review').classList.toggle('hidden');$('reviewBtn').textContent=$('review').classList.contains('hidden')?'FEHLER ANSEHEN':'FEHLER AUSBLENDEN'};$('arcadeOpen').onclick=()=>{show('arcadeSection');arcadeDraw()};$('backHome').onclick=()=>show('home');
-stats();
-// Bonus arcade: original simple endless runner, local high score only.
-const c=$('runner'),g=c.getContext('2d');let running=false,frame=0,score=0,high=Number(store.get('mqrunbest')||0),py=245,vy=0,onGround=true,obs=[],stars=[],raf=0;
-function arcadeDraw(){g.fillStyle='#0a1230';g.fillRect(0,0,900,320);for(let i=0;i<55;i++){g.fillStyle='#8ba9ff77';g.fillRect((i*167-frame*.2)%900,(i*53)%210,2,2)}g.fillStyle='#1a2c55';g.fillRect(0,270,900,50);g.fillStyle='#50eaff';g.fillRect(0,267,900,4);g.fillStyle='#a98bff';g.fillRect(105,py,38,38);g.fillStyle='#fff';g.fillRect(113,277-38,7,7);g.fillRect(128,277-38,7,7);obs.forEach(o=>{g.fillStyle='#ff6fcf';g.fillRect(o.x,270-o.h,o.w,o.h);g.fillStyle='#ffd2f1';g.fillRect(o.x+5,270-o.h+5,o.w-10,4)});stars.forEach(s=>{g.fillStyle='#baff6a';g.font='22px sans-serif';g.fillText('★',s.x,s.y)});g.fillStyle='#fff';g.font='bold 20px Nunito';g.fillText('SCORE '+score,24,35);g.fillText('BEST '+high,780,35);if(!running){g.fillStyle='#fff';g.font='bold 26px Nunito';g.fillText('NEON STAR RUN',340,125);g.font='18px Nunito';g.fillText('Press START to play',365,158)}}
-function tick(){if(!running)return;frame++;score=Math.floor(frame/6);vy+=.72;py+=vy;if(py>=232){py=232;vy=0;onGround=true}if(frame%95===0)obs.push({x:920,w:25+Math.random()*20,h:30+Math.random()*48});if(frame%130===0)stars.push({x:930,y:160+Math.random()*65});obs.forEach(o=>o.x-=6);stars.forEach(s=>s.x-=6);obs=obs.filter(o=>o.x>-50);stars=stars.filter(s=>s.x>-30);for(let o of obs)if(105+32>o.x&&105<o.x+o.w&&py+38>270-o.h){running=false;$('gameStatus').textContent='Game over! Score: '+score+'. Drücke START für eine neue Runde.';high=Math.max(high,score);store.set('mqrunbest',high);break}for(let s of stars)if(!s.hit&&125>s.x&&125<s.x+20&&py<s.y+15&&py+38>s.y-15){s.hit=true;score+=10}$('gameStatus').textContent='Score: '+score+' · Highscore: '+high+' · Springe mit Leertaste / ↑ / Tippen';arcadeDraw();if(running)raf=requestAnimationFrame(tick)}
-function jump(){if(running&&onGround){vy=-13;onGround=false}}
-function gameStart(){cancelAnimationFrame(raf);frame=0;score=0;py=232;vy=0;onGround=true;obs=[];stars=[];running=true;$('gameStatus').textContent='Los geht’s!';tick()}
-$('gameStart').onclick=gameStart;c.addEventListener('pointerdown',jump);window.addEventListener('keydown',e=>{if(['Space','ArrowUp','KeyW'].includes(e.code)&&!$('arcadeSection').classList.contains('hidden')){e.preventDefault();jump()}});arcadeDraw();
-})();
-</script></body></html>
+function save(){try{localStorage.setItem('dairySave',JSON.stringify({coins,level,capacity,owned:owned.map(o=>o.type)}))}catch{}}
+function say(s){$('toast').textContent=s;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),1700)}
+function mat(color,roughness=.8){return new THREE.MeshStandardMaterial({color,roughness})}
+function box(w,h,d,color,x,y,z,parent=scene){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat(color));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m}
+function sphere(r,color,x,y,z,parent=scene){const m=new THREE.Mesh(new THREE.SphereGeometry(r,16,12),mat(color));m.position.set(x,y,z);m.castShadow=true;parent.add(m);return m}
+function makeCreature(typeIndex){const t=types[typeIndex];const g=new THREE.Group();const body=sphere(.48,t.color,0,.62,0,g);body.scale.set(1,.82,1);sphere(.29,0xffffff,0,.93,.25,g);sphere(.055,0x172039,-.11,.96,.49,g);sphere(.055,0x172039,.11,.96,.49,g);sphere(.045,0x29202a,0,.82,.53,g);for(let i=0;i<4;i++)box(.12,.34,.13,t.color,(i<2?-.27:.27),.2,i%2?-.23:.23,g);if(typeIndex===0||typeIndex===2){sphere(.17,0xffffff,-.3,1.08,-.05,g);sphere(.17,0xffffff,.3,1.08,-.05,g)}else if(typeIndex===3){const hat=box(.42,.13,.42,0xffe66d,0,1.18,0,g);hat.rotation.y=.3}else if(typeIndex===4){sphere(.17,0x9bdb82,-.25,1.1,-.04,g);sphere(.17,0x9bdb82,.25,1.1,-.04,g)}g.userData={type:typeIndex};return g}
+function init(){
+ scene=new THREE.Scene();scene.background=new THREE.Color(0x9bd8ef);scene.fog=new THREE.Fog(0x9bd8ef,24,65);
+ camera=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,100);camera.position.set(0,10,13);
+ renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;$('game').appendChild(renderer.domElement);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x668c79,2));const sun=new THREE.DirectionalLight(0xfff3d8,2.5);sun.position.set(-8,16,8);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);scene.add(sun);
+ box(80,.3,80,0x72c779,0,-.25,0);
+ // Farm boundary and paths
+ box(12,.15,10,0xe4d6a9,0,-.03,0);box(4,.08,1.2,0xc69a68,0,.04,0);
+ // conveyor
+ box(9,.65,1.5,0x424c5e,0,.35,-5);box(8.7,.12,1.35,0x7f8d9e,0,.72,-5);
+ for(let x=-4;x<=4;x+=.8){box(.08,.16,1.42,0x293548,x,.82,-5)}
+ // base area
+ box(9,.3,7,0x5b91d8,0,.1,3);box(8.7,.12,6.7,0x9ec9f1,0,.31,3);
+ // base back wall and dairy sign
+ box(9,2.4,.3,0x426db1,0,1.35,6.35);box(3.6,.9,.25,0xffe16b,0,2.6,6.15);
+ // little farm props
+ for(let i=0;i<8;i++){const x=-8+(i%4)*5.3,z=-1+Math.floor(i/4)*9;box(.45,1.5,.45,0x8b5b36,x,.7,z);sphere(.95,0x4caa67,x,1.8,z)}
+ // fences
+ for(let x=-6;x<=6;x+=1.5){box(.12,.7,.12,0xf4e5c3,x,.45,7.5)}
+ player=new THREE.Group();const torso=box(.7,.85,.42,0x4389e8,0,.9,0,player);torso.position.y=.9;sphere(.36,0xffd4a6,0,1.55,0,player);sphere(.06,0x172039,-.12,1.59,.31,player);sphere(.06,0x172039,.12,1.59,.31,player);box(.18,.55,.2,0x273b61,-.25,.3,0,player);box(.18,.55,.2,0x273b61,.25,.3,0,player);player.position.set(0,0,1);scene.add(player);
+ // slots
+ for(let i=0;i<capacity;i++)addSlot(i);
+ // restore owned collection
+ (saved.owned||[]).forEach(t=>{const idx=types.findIndex(x=>x.name===t);if(idx>=0&&owned.length<capacity)addOwned(idx)});
+ updateHud();animate();
+}
+function addSlot(i){const col=i%4,row=Math.floor(i/4);const x=-3+col*2,z=2+row*2;const pad=box(1.55,.12,1.55,0xd5e7f5,x,.42,z);pad.material=mat(0xd5e7f5);slots.push({x,z,pad,creature:null})}
+function addOwned(typeIndex){const slot=slots.find(s=>!s.creature);if(!slot)return false;const c=makeCreature(typeIndex);c.position.set(slot.x,0.48,slot.z);scene.add(c);slot.creature=c;owned.push({type:typeIndex,slot,creature:c});return true}
+function spawn(){if(spawned.length>=5)return;const idx=Math.min(types.length-1,Math.floor(Math.random()*Math.min(types.length,2+Math.floor(level/2))));const c=makeCreature(idx);c.position.set(-4.1,.85,-5);scene.add(c);spawned.push({type:idx,creature:c,x:-4.1,z:-5,age:0});}
+function updateHud(){$('coins').textContent=Math.floor(coins);$('owned').textContent=owned.length;$('income').textContent=owned.reduce((a,o)=>a+types[o.type].rate*level,0);$('upgrade').innerHTML='⚡ Upgrade<br><b>'+ (level*100)+' 🪙</b>';$('expand').innerHTML='🏡 Base erweitern<br><b>250 🪙</b>'}
+function nearestSpawn(){let best=null,dist=2.3;for(const s of spawned){const d=Math.hypot(player.position.x-s.x,player.position.z-s.z);if(d<dist){best=s;dist=d}}return best}
+function collect(){if(carry){say('Du trägst schon eine Figur! Bring sie zu deiner Base.');return}const s=nearestSpawn();if(!s){say('Geh näher an eine Figur auf dem Laufband.');return}carry=s;scene.remove(s.creature);spawned=spawned.filter(x=>x!==s);carry.creature=makeCreature(carry.type);carry.creature.position.set(0,1.9,0);player.add(carry.creature);say(types[carry.type].name+' eingesammelt!');}
+function deposit(){if(!carry){say('Du hast gerade keine Figur dabei.');return}if(Math.hypot(player.position.x,player.position.z-3)<5){if(owned.length>=capacity){say('Deine Base ist voll! Erweitere sie.');return}player.remove(carry.creature);carry.creature=null;addOwned(carry.type);say(types[carry.type].name+' ist jetzt in deiner Base!');carry=null;save();updateHud()}else say('Geh zurück in deine Base (blaue Fläche)!')}
+function buyUpgrade(){const cost=level*100;if(coins<cost){say('Du brauchst '+cost+' Münzen.');return}coins-=cost;level++;say('Upgrade gekauft! Deine Figuren verdienen jetzt mehr.');save();updateHud()}
+function expand(){if(capacity>=16){say('Deine Base ist schon maximal ausgebaut!');return}if(coins<250){say('Du brauchst 250 Münzen.');return}coins-=250;const old=capacity;capacity+=4;for(let i=old;i<capacity;i++)addSlot(i);say('Base erweitert! 4 neue Plätze.');save();updateHud()}
+$('collect').onclick=collect;$('sell').onclick=deposit;$('upgrade').onclick=buyUpgrade;$('expand').onclick=expand;
+$('play').onclick=()=>{$('startPanel').classList.add('hidden');if(!saved.seen){$('helpPanel').classList.remove('hidden');saved.seen=true;try{localStorage.setItem('dairySave',JSON.stringify({...saved,seen:true}))}catch{}}started=true};
+$('continue').onclick=()=>$('helpPanel').classList.add('hidden');
+function animate(){requestAnimationFrame(animate);if(!scene)return;const dt=Math.min(clock?clock.getDelta():.016,.05);if(started){const speed=5.2;let dx=0,dz=0;if(keys.KeyW||keys.ArrowUp)dz-=1;if(keys.KeyS||keys.ArrowDown)dz+=1;if(keys.KeyA||keys.ArrowLeft)dx-=1;if(keys.KeyD||keys.ArrowRight)dx+=1;dx+=joyX;dz+=joyY;const len=Math.hypot(dx,dz);if(len>.08){dx/=Math.max(1,len);dz/=Math.max(1,len);player.position.x+=dx*speed*dt;player.position.z+=dz*speed*dt;player.position.x=THREE.MathUtils.clamp(player.position.x,-5.5,5.5);player.position.z=THREE.MathUtils.clamp(player.position.z,-7,6.8);player.rotation.y=Math.atan2(dx,dz)}if(carry){carry.creature.position.y=1.9+Math.sin(Date.now()*.006)*.08}const target=new THREE.Vector3(player.position.x,0,player.position.z+11);camera.position.lerp(new THREE.Vector3(player.position.x,10,player.position.z+13),.07);camera.lookAt(player.position.x,0,player.position.z-1);if(Date.now()-lastSpawn>2600){spawn();lastSpawn=Date.now()}for(const s of spawned){s.x+=.7*dt;s.creature.position.x=s.x;s.creature.position.y=.85+Math.sin(Date.now()*.004+s.x)*.07;if(s.x>4.3){scene.remove(s.creature);spawned=spawned.filter(v=>v!==s)}}if(Date.now()-lastPay>1000){coins+=owned.reduce((a,o)=>a+types[o.type].rate*level,0);lastPay=Date.now();save();updateHud()}const near=nearestSpawn();$('hint').textContent=carry?'Bring deine Figur zur blauen Base und tippe ABHOLEN!':near?'Figur in Reichweite – tippe SAMMELN!':'Laufe zum Laufband und sammle Dairy-Brainrots!'}renderer.render(scene,camera)}
+let joyX=0,joyY=0,joyActive=false;const joy=$('joy'),stick=$('stick');function moveJoy(e){const r=joy.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;let x=e.clientX-cx,y=e.clientY-cy;const max=r.width*.34,l=Math.hypot(x,y);if(l>max){x=x/l*max;y=y/l*max}joyX=x/max;joyY=y/max;stick.style.transform='translate('+x+'px,'+y+'px)'}joy.addEventListener('pointerdown',e=>{joyActive=true;joy.setPointerCapture(e.pointerId);moveJoy(e)});joy.addEventListener('pointermove',e=>{if(joyActive)moveJoy(e)});function endJoy(){joyActive=false;joyX=0;joyY=0;stick.style.transform='translate(0,0)'}joy.addEventListener('pointerup',endJoy);joy.addEventListener('pointercancel',endJoy);
+addEventListener('keydown',e=>{keys[e.code]=true;if(e.code==='KeyE')collect();if(e.code==='Space')deposit()});addEventListener('keyup',e=>keys[e.code]=false);addEventListener('resize',()=>{if(!camera||!renderer)return;camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+try{clock=new THREE.Clock();init()}catch(e){console.error(e);$('startPanel').classList.remove('hidden');$('startPanel').innerHTML='<h1>3D-Spiel konnte nicht starten</h1><p>Bitte öffne die Seite in einem aktuellen Browser mit aktivierter Hardwarebeschleunigung und Internetverbindung.</p>'}
+</script>
+</body></html>
